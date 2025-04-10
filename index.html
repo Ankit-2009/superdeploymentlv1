@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Coder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Find <span class="typewriter" id="typewriter-text">Coder</span></h1>
+        </header>
+
+        <div class="search-section">
+            <input type="text" id="username" placeholder="Enter Codeforces username">
+            <button onclick="fetchUserData()">Search</button>
+        </div>
+
+        <div class="profile-container" id="profile-container">
+            <div class="loading" id="loading">Loading...</div>
+            <div class="error" id="error"></div>
+
+            <div class="profile-content" id="profile-content">
+                <div class="user-info">
+                    <img id="avatar" src="" alt="User Avatar">
+                    <h2 id="user-name"></h2>
+                    <p id="user-rank"></p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <h3>Rating</h3>
+                        <p id="rating"></p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Max Rating</h3>
+                        <p id="max-rating"></p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Contribution</h3>
+                        <p id="contribution"></p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Friends</h3>
+                        <p id="friends"></p>
+                    </div>
+                </div>
+
+                <div class="recent-contests">
+                    <h3>Recent Contests</h3>
+                    <div id="contests-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
