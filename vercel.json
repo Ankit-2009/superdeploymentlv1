@@ -14,16 +14,13 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/",
+      "destination": "/index.html"
     }
   ],
+  "cleanUrls": true,
   "headers": [
     {
       "source": "/(.*)",
